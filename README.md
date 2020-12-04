@@ -1,7 +1,7 @@
-# Beer Clicker IDLE :beers: [![CDNJS](https://img.shields.io/github/package-json/v/johnvidal77/idle-game/master)]()
+# Idle Game [![CDNJS](https://img.shields.io/github/package-json/v/johnvidal77/idle-game/master)]()
 
 My first game creation venture, creating a Cookie Clicker inspired idle game.
-Focused on starting studies on Game Design and development with bare JS, CSS and HTML.
+Focused on starting studies on Game Design and development with React.
 
 ## Current Version :man_technologist:
 
