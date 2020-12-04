@@ -1,22 +1,22 @@
-import { useState } from "react";
+import React from 'react';
+import GlobalStyle from '../styles/global';
+import { MainGame } from './styles';
 
-const App = () => {
-  const [points, setPoints] = useState(0);
+import Clicker from '../views/Clicker';
+import Upgrades from '../views/Upgrades';
+import Builds from '../views/Builds';
 
+const App: React.FC = () => {
   return (
-    <div>
-      <div>
-        <span style={{ display: "block" }}>{points} points</span>
-        <button
-          style={{ display: "block" }}
-          onClick={() => setPoints(points + 1)}
-        >
-          Click here
-        </button>
-      </div>
-      <div>Upgrades</div>
-      <div>Buildings</div>
-    </div>
+    <>
+      <MainGame>
+        <Clicker />
+        <Builds />
+        <Upgrades />
+      </MainGame>
+      <GlobalStyle />
+    </>
   );
 };
+
 export default App;
