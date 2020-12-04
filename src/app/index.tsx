@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const App = () => {
   const [points, setPoints] = useState(0);
 
   return (
-    <>
-      <main>
+    <div>
+      <div>
         <span style={{ display: "block" }}>{points} points</span>
         <button
           style={{ display: "block" }}
@@ -13,10 +13,10 @@ const App = () => {
         >
           Click here
         </button>
-      </main>
-      <section>Upgrades</section>
-      <section>Buildings</section>
-    </>
+      </div>
+      <div>Upgrades</div>
+      <div>Buildings</div>
+    </div>
   );
 };
 export default App;
