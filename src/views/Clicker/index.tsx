@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
+
+import { useMainContext } from '../../context/MainContext';
 
 const Clicker: React.FC = () => {
-  const [points, setPoints] = useState(0);
+  const { points, setPoints } = useMainContext();
 
   return (
     <div
